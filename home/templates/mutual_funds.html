@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Funds Investment</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/styles.css' %}">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 200px;
+            height: 100px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="#popular-funds">Popular Funds</a></li>
+                <li><a href="#tips">Investment Tips</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Mutual Funds Investment</h1>
+        <div class="buttons">
+            <button class="button" onclick="openLink('https://drive.google.com/file/d/1sJrPQjdiq-hbDPI0PPaRFJ7jokPJ8WUv/view?usp=sharing')">Some Popular<br>Mutual Funds</button>
+            <button class="button" onclick="openLink('https://groww.in/mutual-funds')">Start<br>Investing</button>
+            <button class="button" onclick="openLink('https://drive.google.com/file/d/1xg3SCbHmwyF0xdHA5aI7iEfW5yjMKC8X/view?usp=sharing')">Know the Basics of Mutual Funds</button>
+            <button class="button" onclick="openLink('https://drive.google.com/file/d/1ynBIN5dC2WMJ4BN6bKZNrhNkb26xftUK/view?usp=sharing')">Why should I Invest in Mutual Funds?</button>
+        </div>
+        <section id="popular-funds">
+            <h2>Popular Mutual Funds</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fund Name</th>
+                            <th>Category</th>
+                            <th>1-Year Return</th>
+                            <th>5-Year Return</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fund A</td>
+                            <td>Equity</td>
+                            <td>15%</td>
+                            <td>60%</td>
+                        </tr>
+                        <tr>
+                            <td>Fund B</td>
+                            <td>Debt</td>
+                            <td>8%</td>
+                            <td>35%</td>
+                        </tr>
+                        <tr>
+                            <td>Fund C</td>
+                            <td>Hybrid</td>
+                            <td>12%</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="tips">
+            <h2>Investment Tips</h2>
+            <p>Get personalized investment tips by filling out the form below.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="risk">Risk Tolerance:</label>
+                <select id="risk" name="risk">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <ul>
+                <li>What is a mutual fund?</li>
+                <li>How do I start investing?</li>
+                <li>What are the risks involved?</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@mutualfunds.com</p>
+            <p>Phone: +1-234-567-890</p>
+            <p>Address: 123 Investment St, Finance City, USA</p>
+        </section>
+    </div>
+    <script>
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>

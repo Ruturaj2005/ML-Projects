@@ -1,0 +1,122 @@
+PS D:\Django\env\Scripts\core> git add .
+PS D:\Django\env\Scripts\core> # .gitignore
+PS D:\Django\env\Scripts\core>
+PS D:\Django\env\Scripts\core> # Python
+PS D:\Django\env\Scripts\core> *.pyc
+*.pyc : The term '*.pyc' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ *.pyc
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (*.pyc:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Django\env\Scripts\core> __pycache__/
+__pycache__/ : The term '__pycache__/' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ __pycache__/
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (__pycache__/:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Django\env\Scripts\core> *.pyo
+*.pyo : The term '*.pyo' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ *.pyo
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (*.pyo:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Django\env\Scripts\core> *.pyd
+*.pyd : The term '*.pyd' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ *.pyd
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (*.pyd:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Django\env\Scripts\core>
+PS D:\Django\env\Scripts\core> # Virtual Environment
+PS D:\Django\env\Scripts\core> env/
+env/ : The term 'env/' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ env/
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (env/:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Django\env\Scripts\core> venv/
+venv/ : The term 'venv/' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ venv/
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (venv/:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Django\env\Scripts\core>
+PS D:\Django\env\Scripts\core> # Django
+PS D:\Django\env\Scripts\core> *.log
+*.log : The term '*.log' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ *.log
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (*.log:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Django\env\Scripts\core> local_settings.py
+local_settings.py : The term 'local_settings.py' is not recognized as the name of a cmdlet, function, script file, or
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try
+again.
+At line:1 char:1
++ local_settings.py
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (local_settings.py:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Django\env\Scripts\core> db.sqlite3
+db.sqlite3 : The term 'db.sqlite3' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ db.sqlite3
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (db.sqlite3:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+Suggestion [3,General]: The command db.sqlite3 was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\db.sqlite3". See "get-help about_Command_Precedence" for more details.
+PS D:\Django\env\Scripts\core> staticfiles/
+staticfiles/ : The term 'staticfiles/' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ staticfiles/
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (staticfiles/:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Django\env\Scripts\core>
+PS D:\Django\env\Scripts\core> # IDEs
+PS D:\Django\env\Scripts\core> .vscode/
+.vscode/ : The term '.vscode/' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ .vscode/
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.vscode/:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Django\env\Scripts\core> .idea/
+.idea/ : The term '.idea/' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ .idea/
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.idea/:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Django\env\Scripts\core>
